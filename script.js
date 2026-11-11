@@ -1,14 +1,17 @@
-let nota1tri;
-let nota2tri;
-let resultado;
+function notas(){
 
-nota1tri = Number(prompt("Digite a nota do 1° trimestre"))
-nota1tri = Number(prompt("Digite a nota do 2° trimestre"))
+    let nota1tri;
+    let nota2tri;
+    let resultado;
 
-resultado = 180-(nota1tri+nota2tri);
+    nota1tri = Number(prompt("Digite a nota do 1° trimestre"))
+    nota2tri = Number(prompt("Digite a nota do 2° trimestre"))
 
-if(resultado <= 0){
-    alert("Parabéns! Você já foi aprovado por nota!!!");
-} else {
-    alert("Poxa, você precisa de " + resultado + " para ser aprovado.");
+    resultado = 180-(nota1tri+nota2tri);
+
+    if(resultado <= 0){
+        alert("Parabéns! Você já foi aprovado por nota!!!");
+    } else {
+        alert("Poxa, você precisa de " + resultado + " para ser aprovado.");
+    }  
 }
